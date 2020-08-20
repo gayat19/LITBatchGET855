@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1082
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodilityDay1Project", "CodilityDay1Project\CodilityDay1Project.csproj", "{009E1DB8-499B-4B1F-8E74-AF3920B8D486}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodilityDay2", "..\..\Day2-Codility\CodilityDay2\CodilityDay2.csproj", "{F9CF1F1B-FA59-4A50-A1E9-D5F05858C6EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{009E1DB8-499B-4B1F-8E74-AF3920B8D486}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{009E1DB8-499B-4B1F-8E74-AF3920B8D486}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{009E1DB8-499B-4B1F-8E74-AF3920B8D486}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{009E1DB8-499B-4B1F-8E74-AF3920B8D486}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9CF1F1B-FA59-4A50-A1E9-D5F05858C6EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9CF1F1B-FA59-4A50-A1E9-D5F05858C6EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9CF1F1B-FA59-4A50-A1E9-D5F05858C6EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9CF1F1B-FA59-4A50-A1E9-D5F05858C6EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {83322E1A-2500-400D-B1B0-841BDA0CEBB1}
+	EndGlobalSection
+EndGlobal

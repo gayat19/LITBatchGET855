@@ -1,0 +1,7 @@
+E:\sony lap backup\d drive\Corp\Srushti\LTI855\Day2-Codility\CodilityDay2\bin\Debug\CodilityDay2.exe.config
+E:\sony lap backup\d drive\Corp\Srushti\LTI855\Day2-Codility\CodilityDay2\bin\Debug\CodilityDay2.exe
+E:\sony lap backup\d drive\Corp\Srushti\LTI855\Day2-Codility\CodilityDay2\bin\Debug\CodilityDay2.pdb
+E:\sony lap backup\d drive\Corp\Srushti\LTI855\Day2-Codility\CodilityDay2\obj\Debug\CodilityDay2.csprojAssemblyReference.cache
+E:\sony lap backup\d drive\Corp\Srushti\LTI855\Day2-Codility\CodilityDay2\obj\Debug\CodilityDay2.csproj.CoreCompileInputs.cache
+E:\sony lap backup\d drive\Corp\Srushti\LTI855\Day2-Codility\CodilityDay2\obj\Debug\CodilityDay2.exe
+E:\sony lap backup\d drive\Corp\Srushti\LTI855\Day2-Codility\CodilityDay2\obj\Debug\CodilityDay2.pdb
