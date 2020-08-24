@@ -1,0 +1,9 @@
+1) https://practice.geeksforgeeks.org/problems/coin-piles/0
+
+2) https://app.codility.com/public-report-detail/
+
+3) https://app.codility.com/demo/take-sample-test/
+
+4) https://app.codility.com/demo/take-sample-test/ps/
+
+5) https://app.codility.com/demo/take-sample-test/bf-leader/

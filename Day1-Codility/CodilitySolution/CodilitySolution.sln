@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodilityDay1Project", "Codi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodilityDay2", "..\..\Day2-Codility\CodilityDay2\CodilityDay2.csproj", "{F9CF1F1B-FA59-4A50-A1E9-D5F05858C6EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodilityDay3", "..\..\Day3-Codility\CodilityDay3\CodilityDay3.csproj", "{E790D6C2-2D08-46A1-B2A9-8951F56FBF14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodilityDay4", "..\..\Day4-Codility\CodilityDay4\CodilityDay4.csproj", "{564468FD-7264-401F-9FB7-5A0D6A18FC4C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{F9CF1F1B-FA59-4A50-A1E9-D5F05858C6EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9CF1F1B-FA59-4A50-A1E9-D5F05858C6EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9CF1F1B-FA59-4A50-A1E9-D5F05858C6EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E790D6C2-2D08-46A1-B2A9-8951F56FBF14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E790D6C2-2D08-46A1-B2A9-8951F56FBF14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E790D6C2-2D08-46A1-B2A9-8951F56FBF14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E790D6C2-2D08-46A1-B2A9-8951F56FBF14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{564468FD-7264-401F-9FB7-5A0D6A18FC4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{564468FD-7264-401F-9FB7-5A0D6A18FC4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{564468FD-7264-401F-9FB7-5A0D6A18FC4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{564468FD-7264-401F-9FB7-5A0D6A18FC4C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

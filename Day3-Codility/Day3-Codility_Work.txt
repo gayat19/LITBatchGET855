@@ -1,0 +1,31 @@
+Missing Integer
+https://app.codility.com/demo/results/trainingRF68BZ-RFY/
+
+class Nucleotides
+{
+    int val;
+    string type;
+    public Nucleotides(){}
+     public Nucleotides(int val,sting type){
+         this.val = val;
+         this.type=type;
+     }
+    public string Type{get=>type;set=>type=value;}
+    public int Type{get=>val;set=>val=value;}
+}
+
+    int count_total(int[] P,int x, int y)
+        {
+            return (P[y] - P[x]);
+        }
+        int[] PrefixSum(int[] A)
+        {
+          
+            int[] result = new int[A.Length + 1];
+            result[0] = 0;
+            for (int i = 0; i < A.Length; i++)
+            {
+                result[i + 1] = result[i] + A[i];
+            }
+            return result;
+        }
