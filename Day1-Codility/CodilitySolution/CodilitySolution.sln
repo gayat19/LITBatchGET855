@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodilityDay3", "..\..\Day3-
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodilityDay4", "..\..\Day4-Codility\CodilityDay4\CodilityDay4.csproj", "{564468FD-7264-401F-9FB7-5A0D6A18FC4C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodilityDay5", "..\..\Day5-Codility\CodilityDay5\CodilityDay5.csproj", "{6AF060F1-0D36-4BE0-BDA1-E786A19F9356}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{564468FD-7264-401F-9FB7-5A0D6A18FC4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{564468FD-7264-401F-9FB7-5A0D6A18FC4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{564468FD-7264-401F-9FB7-5A0D6A18FC4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AF060F1-0D36-4BE0-BDA1-E786A19F9356}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AF060F1-0D36-4BE0-BDA1-E786A19F9356}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AF060F1-0D36-4BE0-BDA1-E786A19F9356}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AF060F1-0D36-4BE0-BDA1-E786A19F9356}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

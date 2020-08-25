@@ -1,0 +1,155 @@
+using System;
+using System.Collections.Generic;
+
+// you can also use other imports, for example:
+// using System.Collections.Generic;
+
+// you can write to stdout for debugging purposes, e.g.
+// Console.WriteLine("this is a debug message");
+
+class Solution {
+    public int solution(int[] A) {
+        // write your code in C# 6.0 with .NET 4.5 (Mono)
+        HashSet<int> dist = new HashSet<int>();
+        
+        for(int i=0;i<A.Length;i++)
+        {
+              dist.Add(Math.Abs(A[i]));
+        }
+        result dist.Count();
+    }
+}
+
+NumberOfDiscIntersections
+https://app.codility.com/demo/results/trainingDWSSRB-YQJ/  
+
+class Solution {
+    public int solution(int[] A) {
+        // write your code in C# 6.0 with .NET 4.5 (Mono)
+        
+                int len = A.Length;
+        
+        if(len == 0 || len == 1){
+            return 0;
+        }else{
+            long[] startingPoints = new long[len];
+            long[] endingPoints = new long[len];
+            
+            for(int i = 0; i< len; i++){
+                startingPoints[i] = (long)i - (long)A[i];
+                endingPoints[i] = (long)i + (long)A[i];
+            }
+            
+            int openCircles = 0;
+            int intersections = 0;
+            
+            Array.Sort(startingPoints);
+            Array.Sort(endingPoints);
+            int EndIndex = 0;
+            for(int j = 0; j < len; j++){
+                if(startingPoints[j] <= endingPoints[EndIndex]){
+                    openCircles++;
+                    
+                    if(openCircles > 1){
+                        intersections += openCircles-1;
+                    }
+                }else{
+                    j--;
+                    EndIndex++;
+                    openCircles--;
+                }
+                
+                if(intersections > 10000000){
+                    intersections = -1;
+                    break;
+                }
+            }
+            
+            return intersections;
+        }
+    }
+}
+
+
+ public int solution(int[] A) {
+      int result =0;
+      int len = A.Length;
+      long[] start = new long[len];
+      long[] end = new long[len];
+      for(int i=0;i<len;i++)
+      {
+          start[i] = (long)i-A[i];
+          end[i] = (long)i+A[i];
+      }
+     
+      for(int i=0;i<len;i++)
+      {
+          for(int j=i+1;j<len;j++)
+          {
+              if(end[i]>=start[j])
+                result++;
+          }
+      }
+      
+      if(result >10000000 )
+        result = -1;
+      return result;
+      
+    }
+
+
+
+
+
+using System;
+
+public class BugFixing5 {
+
+    //return the element which occurs the maximum no of times in the given array A
+    //M indicates the max value of any element in the array
+    int solution(int M, int[] A) {
+        int N = A.length;    
+        int[] count = new int[M + 1];
+        for (int i = 0; i <= M; i++)
+            count[i] = 0;
+        int maxOccurence = 1;
+        int index = -1;
+        for (int i = 0; i < N; i++) {
+            if (count[A[i]] > 0) {
+                int tmp = count[A[i]];
+            if (tmp > maxOccurence) {
+                maxOccurence = tmp;
+                index = i;
+                }
+            count[A[i]] = tmp + 1;
+            } else {
+                count[A[i]] = 1;
+            }
+        }
+        return A[index];
+    }
+    public static void Main(string[] args) {
+        Console.WriteLine(new BugFixing5().solution(5, new int[] { 1, 2, 3, 3, 3, 4, 4, 3, 2}));
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
