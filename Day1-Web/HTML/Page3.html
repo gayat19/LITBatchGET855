@@ -1,0 +1,71 @@
+<html>
+<body>
+   <form action="Page1.html">
+    <table>
+ 	<tr>
+	  <td> Name:</td>
+	  <td>
+	    <input type="text" required placeholder="Please enter your name"/> 
+          </td>
+        </tr>
+	<tr>
+	  <td> Password:</td>
+	  <td>
+	    <input type="password" required pattern = "[0-9][0-9][0-9][0-9]"/> 
+          </td>
+        </tr>	
+	<tr>
+	  <td> Date of Birth:</td>
+	  <td>
+	    <input type="Date" required /> 
+          </td>
+        </tr>	
+	<tr>
+	  <td> Age:</td>
+	  <td>
+	    <input type="number" min="18" max="54"/> 
+          </td>
+        </tr>
+	<tr>
+	  <td> Gender:</td>
+	  <td>
+	    <input type="radio" name="rdbGender">Male <input type="radio" name="rdbGender">Female
+          </td>
+        </tr>
+	<tr>
+	  <td> Graduation:</td>
+	  <td>
+	    <input type="checkbox" checked>UG <input type="checkbox">PG
+          </td>
+        </tr>
+	<tr>
+	  <td> Country:</td>
+	  <td>
+	    <select>
+		<option>India</option>
+		<option>UK</option>
+		<option>USA</option>
+		<option>China</option>
+	    </select>
+          </td>
+        </tr>
+	<tr>
+	  <td> Food Type:</td>
+	  <td>
+	    <input list="foodtype">
+	    <datalist id="foodtype">
+		<option>Indian</option>
+		<option>Continental</option>
+		<option>American</option>
+		<option>Chinise</option>
+	    </datalist>
+          </td>
+        </tr>
+	<tr>
+     	  <td><input type="submit"/></td>
+	  <td><input type="reset"/></td>
+	</tr>
+    </table>
+   </form>
+</body>
+</html>

@@ -64,13 +64,46 @@ namespace CodilityDay5
             {
                 return 0;
             }
-
+            
+            
             return 1;
+        }
+        int FixBug(int[] nums,int key)
+        {
+            int result = -1;
+            int size = nums.Length;
+            if(size == 0)
+            {
+                return result;
+            }
+            int left = 0;
+            int right = size-1;//1
+            while (left<= right)//2
+            {
+                int mid = (left + right) / 2;
+
+                if(nums[mid]>= key)//3
+                {
+                    right = mid-1;
+                }
+                else
+                {
+                    left = mid+1;//4
+                }
+            }
+            if (nums[left] == key)
+                result = left;
+            return result;
         }
         static void Main(string[] args)
         {
-            int i = new Program().solution("{[()()]}");
+            Console.WriteLine("Main");
+            int[] arr = { 2, 3, 4, 10,11,67,90,100};
+            int i = new Program().FixBug(arr, 100);
             Console.WriteLine(i);
+            //int i = new Program().solution("{[()()]}");
+           
+            
             Console.ReadKey();
         }
     }
