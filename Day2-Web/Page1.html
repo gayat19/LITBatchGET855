@@ -1,0 +1,88 @@
+<html>
+    <head>
+        <style>
+            .basic{
+                border:2px blue solid;
+            }
+            .err{
+                background-color:coral;
+            }
+            .val{
+                background-color: greenyellow;
+            }
+            .clsIn{
+                font-size: 2em;
+            }
+        </style>
+        <script src="script1.js"> 
+         </script>
+         <script>
+              function handleTextBox(){
+                var name = document.getElementById("txtName");
+                console.log(name.value);
+            }
+            function handleDiv(){
+                var container = document.getElementById("div1");
+                console.log("Div Content "+container.innerHTML);
+            }
+            function checkUsername(){
+                var username = document.getElementById("txtName");
+                var msgUN = document.getElementById("errUN");
+                if(username.value == "")
+                {
+                    username.style.borderColor = "red";
+                    msgUN.innerHTML = "User name cannot be empty";
+                    msgUN.classList.add("err");
+                    username.focus();
+                }
+                else {
+                    username.style.borderColor = "green";
+                    msgUN.classList.remove("err");
+                    msgUN.innerHTML = "";
+                }
+            }
+            function checkPassword(){
+                var password = document.getElementById("txtPass");
+                var msgPass = document.getElementById("errPass");
+                //msgUN.classList.add("basic");
+                if(password.value == "")
+                {
+                    password.style.borderColor = "red";
+                    msgPass.innerHTML = "Password cannot be empty";
+                    //password.focus();
+                }
+                else
+                {
+                    password.style.borderColor = "green";
+                    msgPass.innerHTML = "";
+                }
+                //alert("Welcome  "+username.value);  
+            }
+            function checkData(){
+                checkUsername();
+                checkPassword();
+            }
+            function changeSize(){
+                var btn = document.getElementById("btnLogin");
+                btn.classList.add("clsIn");
+            }
+            function changeBack(){
+                var btn = document["frmLogin"]["btnLogin"];
+                btn.classList.remove("clsIn");
+            }
+         </script>
+    </head>
+    <body>
+        <div id="div1">
+            Hello in Div
+        </div>
+        <form name="frmLogin">
+            username: <input type="text" id="txtName" onblur="checkUsername()"/><span id="errUN"></span>
+            <br>
+            password: <input type="password" id="txtPass"  onblur="checkPassword()"/><span id="errPass"></span>
+            <br>
+            <button onclick="checkData()" id="btnLogin" onmouseover="changeSize()" onmouseout="changeBack()">Login</button>
+        </form>
+        <!-- <input type="submit" value="Div Work"/> -->
+    </body>
+</html>
