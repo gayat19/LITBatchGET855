@@ -1,0 +1,13 @@
+Componnet based
+SPA - Single Page Application
+
+
+ng generate component <componentname>
+(or)
+ng g c <componentname>
+
+npm install bootstrap --save
+In you style.css
+@import 'bootstrap/dist/css/bootstrap.css';
+
+btn btn-success - > button

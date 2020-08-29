@@ -1,0 +1,12 @@
+<p>second works!</p>
+
+<!-- interpolation oneway binding from componenet to html -->
+{{name}}
+<input type="text" value="{{name}}">
+<!-- Property Binding -->
+<input type="text" [class]="clsName" [value]="name">
+<!-- Event Binding from view  calling component's method -->
+<button class="btn btn-success" (click)="changeClass()">Change</button>
+<div [class]="divClass">
+    This will change
+</div>

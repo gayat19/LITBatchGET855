@@ -1,0 +1,18 @@
+1)create an component that will calculate the total amount to be paid
+
+display the product details
+
+Name
+Image(add the image in the assets folder)
+Price
+Take quantity as input
+Display the gross price and net price
+
+
+2) StackBlitz
+Add a product name and display it in the view
+Use CSS class to style it
+Have a input box with with a + and - button on right and left respectively.
+The initial value of the textbox should be 5
+when u click the + the value should increment
+when u click the - the value should come down
