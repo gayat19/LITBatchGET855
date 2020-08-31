@@ -16,3 +16,4 @@ Have a input box with with a + and - button on right and left respectively.
 The initial value of the textbox should be 5
 when u click the + the value should increment
 when u click the - the value should come down
+

@@ -1,0 +1,10 @@
+<p>show-movie works!</p>
+<div>
+    <select (change)="showMovie(mid)" #mid>
+        <option value="Select Movie">Select Movie</option>
+        <option *ngFor="let m of movies" [value]="m.id">{{m.id}}</option>
+    </select>
+</div>
+<div *ngIf="movie != null">
+    {{movie.name}}
+</div>

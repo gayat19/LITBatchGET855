@@ -9,6 +9,9 @@ import { SecondComponent } from './second/second.component';
 import { StarComponent } from './star/star.component';
 import { LikeComponent } from './like/like.component';
 import { MovieComponent } from './movie/movie.component';
+import { MoviesComponent } from './movies/movies.component';
+import { MovieService } from './services/movieService';
+import { ShowMovieComponent } from './show-movie/show-movie.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +20,16 @@ import { MovieComponent } from './movie/movie.component';
     SecondComponent,
     StarComponent,
     LikeComponent,
-    MovieComponent
+    MovieComponent,
+    MoviesComponent,
+    ShowMovieComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [MovieService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

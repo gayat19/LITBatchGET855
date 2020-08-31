@@ -7,9 +7,9 @@
     <br>
     Duration:<input type="number" [(ngModel)]="movie.duration">
     <br>
-    <button class="btn btn-primary" >Create</button>
+    <button class="btn btn-primary" (click)="addMovie()" >Create</button>
 </div>
-<div>
+<!-- <div>
     Movie Id: {{movie.id}}
     <br>
     Movie Name: {{movie.name}}
@@ -17,4 +17,4 @@
     Movie Duration: {{movie.duration}}
     <br>
     {{10*2+10}}
-</div>
+</div> -->

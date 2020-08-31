@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Movie} from '../models/movie';
+import { MovieService } from '../services/movieService';
 
 @Component({
   selector: 'app-movie',
@@ -9,8 +10,10 @@ import {Movie} from '../models/movie';
 export class MovieComponent implements OnInit {
 
   movie:Movie;
-  constructor() {
+  //movieService:MovieService;
+  constructor(private movieService:MovieService) {
     this.movie = new Movie();
+    //this.movieService = new MovieService();
    }
 
 
@@ -21,6 +24,10 @@ export class MovieComponent implements OnInit {
     this.movie.duration = dur.value;
    }
   ngOnInit(): void {
+  }
+  addMovie(){
+    this.movieService.addMovie(this.movie);
+    this.movie = new Movie();
   }
 
 }

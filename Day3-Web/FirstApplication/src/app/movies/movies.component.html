@@ -1,0 +1,22 @@
+<h1>Movie List</h1>
+<!-- <div *ngFor="let m of movies">
+    Id: {{m.id}}<br/>
+    Name: {{m.name}}<br/>
+    Duration: {{m.duration}}<br/>
+    <hr>
+</div> -->
+<table border="1" *ngIf="movies.length>0; else other">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Duration</th>
+    </tr>
+    <tr *ngFor="let m of movies">
+        <th>{{m.id}}</th>
+        <th>{{m.name}}</th>
+        <th>{{m.duration}}</th>
+    </tr>
+</table>
+<ng-template #other>
+   <p class="alert alert-info"> No records to show!!</p>
+</ng-template>

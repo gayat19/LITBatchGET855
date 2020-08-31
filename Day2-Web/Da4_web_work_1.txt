@@ -1,0 +1,10 @@
+Service
+DI
+For
+if
+intercomponent communication using service
+
+parent to child comm
+
+Create a services folder under app
+create a movieService.ts under the services folder
