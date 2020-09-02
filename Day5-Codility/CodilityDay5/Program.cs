@@ -77,18 +77,18 @@ namespace CodilityDay5
                 return result;
             }
             int left = 0;
-            int right = size-1;//1
-            while (left<= right)//2
+            int right = size;
+            while (left<= right)//1
             {
                 int mid = (left + right) / 2;
 
-                if(nums[mid]>= key)//3
+                if(nums[mid]>= key)//2
                 {
                     right = mid-1;
                 }
                 else
                 {
-                    left = mid+1;//4
+                    left = mid+1;//3
                 }
             }
             if (nums[left] == key)
@@ -99,7 +99,7 @@ namespace CodilityDay5
         {
             Console.WriteLine("Main");
             int[] arr = { 2, 3, 4, 10,11,67,90,100};
-            int i = new Program().FixBug(arr, 100);
+            int i = new Program().FixBug(arr, 10);
             Console.WriteLine(i);
             //int i = new Program().solution("{[()()]}");
            

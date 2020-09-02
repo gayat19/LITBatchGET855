@@ -1,4 +1,23 @@
-div{
+/* .productList{
     position: relative;
     float: left;
+    height: 300px;
+    width: 400px;
 }
+
+.addProduct{
+    position: relative;
+    float: right;
+    right:0px; 
+    top:0px;
+    height: 200px;
+    width: 200px;
+}
+.cart{
+    position: absolute;
+    float: right;
+    right:0px; 
+    top:330px;
+    height: 200px;
+    width: 200px; 
+}*/

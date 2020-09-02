@@ -1,0 +1,14 @@
+<div class="alert alert-info">
+    <label class="form-control">Product Id</label>
+    <input type="text" class="form-control" [(ngModel)]="product.id">
+    <label class="form-control">Product Name</label>
+    <input type="text" class="form-control" [(ngModel)]="product.name">
+    <label class="form-control">Product Price</label>
+    <input type="text" class="form-control" [(ngModel)]="product.price">
+    <label class="form-control">Product Quantity</label>
+    <input type="text" class="form-control" [(ngModel)]="product.quantity">
+    <label class="form-control">Product Image</label>
+    <input type="text" class="form-control" [(ngModel)]="product.img">
+    <button class="btn btn-success" (click)="addProduct()">Add Product</button>
+    <br/>{{msg}}
+</div>

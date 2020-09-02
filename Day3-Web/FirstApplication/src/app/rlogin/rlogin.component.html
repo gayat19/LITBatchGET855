@@ -1,0 +1,19 @@
+<div class="alert alert-warning">
+    <form [formGroup]="myForm" (ngSubmit)="doLogin()"> 
+        <label class="form-control">Username</label>
+        <input class="form-control" type="text" formControlName="username">
+        <span class="alert alert-danger" *ngIf="username.errors && username.touched">
+          <span *ngIf="username.errors.required">  Username cannot be empty!!!</span>
+          <span *ngIf="username.errors.minlength">  Username should be min 3 chars!!!</span>
+          <span *ngIf="username.errors.pattern">  Doed not match the pattern {{username.errors.pattern.requiredPattern}}</span>
+        </span>
+        <br>
+
+        <label class="form-control">Password</label>
+        <input class="form-control" type="password" formControlName="password">
+        <button class="btn btn-success" [disabled]="myForm.invalid">Login</button>
+        <button class="btn btn-danger">Reset</button>
+  </form>
+</div>
+
+

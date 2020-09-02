@@ -1,0 +1,13 @@
+<div class="alert alert-danger">
+<p *ngFor="let product of products">
+    Name:{{product.name}}
+    <br/>
+    Quantity:{{product.quantity}}
+    <br/>
+    Price:{{product.price}}
+    <br/>
+    <img [src]="product.img" alt="No Image"/>
+    <br/>
+    <button [disabled]="product.quantity==0" (click)="buy(product.id)" class="btn btn-primary" >Add to cart</button>
+</p>
+</div>

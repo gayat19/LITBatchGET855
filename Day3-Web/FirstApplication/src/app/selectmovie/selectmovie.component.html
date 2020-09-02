@@ -1,0 +1,6 @@
+<select (change)="changeMovie(mid)" #mid>
+    <option *ngFor="let m of movies" [value]="m.id">{{m.name}}</option>
+</select>
+<div>
+    <app-showmovie *ngIf="movie" [myMovie]="movie"></app-showmovie>
+</div>

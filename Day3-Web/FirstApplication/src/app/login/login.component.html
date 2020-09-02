@@ -1,0 +1,22 @@
+<div class="alert alert-warning">
+    <!-- <form> -->
+        <label class="form-control">Username</label>
+        <input class="form-control" 
+        type="text" required 
+        [(ngModel)]="user.username" 
+        #un="ngModel"
+        minlength="3"
+        pattern="[0-9][0-9][0-9][0-9]">
+        <span class="alert alert-danger" *ngIf="un.errors && un.touched">
+          <span *ngIf="un.errors.required">  Username cannot be empty!!!</span>
+          <span *ngIf="un.errors.minlength">  Username should be min 3 chars!!!</span>
+          <span *ngIf="un.errors.pattern">  Doed not match the pattern {{un.errors.pattern.requiredPattern}}</span>
+        </span>
+        <br>
+
+        <label class="form-control">Password</label>
+        <input class="form-control" type="password" required [(ngModel)]="user.password">
+        <button class="btn btn-success" (click)="doLogin(un)">Login</button>
+        <button class="btn btn-danger">Reset</button>
+    <!-- </form> -->
+</div>
