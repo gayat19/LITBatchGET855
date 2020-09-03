@@ -1,0 +1,30 @@
+Create an application that will take the name and gender from user
+Display a welcome msg below with proper greet
+For example
+If the gender selected is male and name is Ramu thenthe welcome msg show show
+
+Welcome Mr. Ramu
+
+
+If the gender selected is female and name is Rita thenthe welcome msg show show
+
+Welcome Miss. Rita
+2) Time - 30 mins
+create a component which has a text box for taking the age and displaying it in the 
+span below the text box.
+add the following style classes
+.display{
+border: 2px black solid;
+height:100px;
+width:100px;
+}
+.vote{
+background-color:green;
+}
+.novote{
+background-color:red;
+}
+
+Wrap the message in an span
+if the age entered by user is <18 then the 'novote' class should be added in addition to the display
+else the 'vote' class should be added.

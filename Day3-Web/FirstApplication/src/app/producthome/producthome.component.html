@@ -1,0 +1,14 @@
+<div class="alert alert-info">
+    <tr *ngFor="let p of products" >
+        <td>
+            {{p.name}}
+        </td>
+        <td>
+            <button class="btn btn-primary" (click)="viewProduct(p.id)">Show Details</button>
+        </td>
+    </tr>
+    <p>
+        <router-outlet></router-outlet>
+    </p>
+</div>
+

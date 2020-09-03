@@ -24,7 +24,70 @@
 <div class="cart">
     <app-cart></app-cart>
 </div>
-<app-rlogin></app-rlogin>-->
+<app-rlogin></app-rlogin>
 <app-selectmovie></app-selectmovie>
 <hr><hr><hr>
 <app-showmovies></app-showmovies>
+
+<app-showproducts></app-showproducts>
+<app-sample-parent></app-sample-parent>-->
+<!-- <div [ngSwitch]="userChoice">
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li (click)="userChoice='product'">Product</li>
+            <li (click)="userChoice='movie'">Movie</li>
+        </ul>
+    </div>
+  </nav>
+    <div *ngSwitchCase="'product'">
+        <app-products></app-products>
+    </div>
+    <div  *ngSwitchCase="'movie'">
+        <app-movies></app-movies>
+    </div>
+
+</div> -->
+
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li><a routerLink="allproducts">Home</a></li>
+            <!-- <li><a routerLink="/products">Product</a></li> -->
+            <li><a routerLink="/movies">Movie</a></li>
+            <li><a routerLink="/login">Login</a></li>
+        </ul>
+    </div>
+</nav>
+<div>
+    <h1>Components to be loaded</h1>
+    <router-outlet></router-outlet>
+    <!-- component to be loaded here is marked -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

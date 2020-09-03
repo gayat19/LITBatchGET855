@@ -21,6 +21,33 @@ import { RloginComponent } from './rlogin/rlogin.component';
 import { ShowmovieComponent } from './showmovie/showmovie.component';
 import { ShowmoviesComponent } from './showmovies/showmovies.component';
 import { SelectmovieComponent } from './selectmovie/selectmovie.component';
+import { ShowproductComponent } from './showproduct/showproduct.component';
+import { ShowproductsComponent } from './showproducts/showproducts.component';
+import { ExplainEventsComponent } from './explain-events/explain-events.component';
+import { SampleParentComponent } from './sample-parent/sample-parent.component';
+import { Routes,RouterModule } from '@angular/router';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
+import { HomeComponent } from './home/home.component';
+import { ProducthomeComponent } from './producthome/producthome.component';
+import { ProductfullComponent } from './productfull/productfull.component';
+
+
+var myRoutes:Routes=[
+  {path:'products',component:ProductsComponent},
+  {path:'movies',component:MoviesComponent},
+  {path:'star',component:StarComponent},
+  {path:'userhome',component:HomeComponent,children:[
+    {path:'products',component:ProductsComponent},
+    {path:'cart',component:CartComponent},
+    {path:'addproduct',component:AddProductComponent}
+  ]},
+  {path:'login',component:RloginComponent},
+  {path:'allproducts',component:ProducthomeComponent,children:[
+    {path:'proddetail/:pid',component:ProductfullComponent}
+  ]},
+  {path:'**',component:PagenotfoundComponent}//wildcard based routing
+]
+
 
 @NgModule({
   declarations: [
@@ -39,13 +66,22 @@ import { SelectmovieComponent } from './selectmovie/selectmovie.component';
     RloginComponent,
     ShowmovieComponent,
     ShowmoviesComponent,
-    SelectmovieComponent
+    SelectmovieComponent,
+    ShowproductComponent,
+    ShowproductsComponent,
+    ExplainEventsComponent,
+    SampleParentComponent,
+    PagenotfoundComponent,
+    HomeComponent,
+    ProducthomeComponent,
+    ProductfullComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule.forRoot(myRoutes)
   ],
   providers: [MovieService,ProductService],
   bootstrap: [AppComponent]
