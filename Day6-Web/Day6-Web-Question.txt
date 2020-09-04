@@ -1,0 +1,21 @@
+1) 
+create a simple class style for 
+support
+ignore
+outer
+inner
+
+Create a componenet that is wraped in a span with a class "outer"
+the content of the inner span should have "I Support" initially
+when clicked should change to "I Ignore"
+And turn back to "I Support" when clicked again
+(Simply toggle)
+
+The span inner should have the class "inner"
+
+If it says "I Ignore" the the class that has to applied is "ignore" in addition
+If it says "I Support" the teh class that has to applied is "support" in addition
+
+
+
+

@@ -1,0 +1,18 @@
+<form [formGroup]="frmEmployee" (ngSubmit)="createEmployee()">
+    <label class="form-control">Id</label>
+    <input type="text" class="form-control" formControlName="id">
+    <span class="alert alert-danger" *ngIf="id.errors && id.touched">
+        Id cannot be empty
+    </span>
+    <label class="form-control">Name</label>
+    <input type="text" class="form-control" formControlName="name">
+    <span class="alert alert-danger" *ngIf="name.errors && name.touched">
+        Name cannot be empty
+    </span>
+    <label class="form-control">Salary</label>
+    <input type="number" class="form-control" formControlName="salary">
+    <span class="alert alert-danger" *ngIf="salary.errors && salary.touched">
+        Salary cannot be empty
+    </span>
+    <button>Add Employee</button>
+</form>

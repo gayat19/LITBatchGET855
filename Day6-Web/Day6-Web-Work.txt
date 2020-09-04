@@ -1,0 +1,26 @@
+CRUD
+Create
+Read
+Update
+Delete
+
+Create 
+Components
+ employee
+ employees
+ addemployee
+
+Service
+  EmployeeService - connect to the API
+   get - http://dummy.restapiexample.com/api/v1/employees
+   post - http://dummy.restapiexample.com/api/v1/create
+
+Model
+  Employee
+    id
+    employee_name
+    employee_salary
+
+
+
+

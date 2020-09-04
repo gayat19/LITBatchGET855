@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +14,7 @@ import { MovieComponent } from './movie/movie.component';
 import { MoviesComponent } from './movies/movies.component';
 import { MovieService } from './services/movieService';
 import {ProductService} from './services/productService';
+import {EmployeeService} from './services/employeeService';
 import { ShowMovieComponent } from './show-movie/show-movie.component';
 import { ProductsComponent } from './products/products.component';
 import { CartComponent } from './cart/cart.component';
@@ -30,6 +33,10 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { HomeComponent } from './home/home.component';
 import { ProducthomeComponent } from './producthome/producthome.component';
 import { ProductfullComponent } from './productfull/productfull.component';
+import { EmployeeComponent } from './employee/employee.component';
+import { EmployeesComponent } from './employees/employees.component';
+import { AddemployeeComponent } from './addemployee/addemployee.component';
+import { PipeexampleComponent } from './pipeexample/pipeexample.component';
 
 
 var myRoutes:Routes=[
@@ -45,6 +52,8 @@ var myRoutes:Routes=[
   {path:'allproducts',component:ProducthomeComponent,children:[
     {path:'proddetail/:pid',component:ProductfullComponent}
   ]},
+  {path:'newemp',component:AddemployeeComponent},
+  {path:'employees',component:EmployeesComponent},
   {path:'**',component:PagenotfoundComponent}//wildcard based routing
 ]
 
@@ -74,16 +83,22 @@ var myRoutes:Routes=[
     PagenotfoundComponent,
     HomeComponent,
     ProducthomeComponent,
-    ProductfullComponent
+    ProductfullComponent,
+    EmployeeComponent,
+    EmployeesComponent,
+    AddemployeeComponent,
+    PipeexampleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forRoot(myRoutes)
+    RouterModule.forRoot(myRoutes),
+    HttpClientModule
+  
   ],
-  providers: [MovieService,ProductService],
+  providers: [MovieService,ProductService,EmployeeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
