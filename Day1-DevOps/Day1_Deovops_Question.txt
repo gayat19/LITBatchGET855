@@ -1,0 +1,12 @@
+Create a new folder in your system
+Initialize it as a git repo
+add 3 files 
+f1,f2,f3
+stage all teh files
+commit all the files
+add a file f4
+commit the file after staging it
+create a new remote repo
+link you local and remote repo
+push your files to the remote repo
+check the commits

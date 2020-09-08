@@ -1,0 +1,119 @@
+DevOps
+Write doen the steps to tie a tie
+
+Waterfall model
+Req
+Anly
+Desg
+Imple
+Test
+Depl
+Main
+
+SRS - Software Req Specification
+Func
+Soft/Hard ware Req
+Non Func Req
+
+Database design
+How many tables
+ In each table the relation and the attributes
+
+How many classes
+ In each class the attributes and fuctionality - developer
+
+Test - developer
+Deployment - Operation team - mostly happens in the customer's system
+
+
+
+CSC
+C# code -> CIL
+
+CLR
+CIL -> ML
+
+ML I can execute
+
+
+
+1) Versoion Control - SVN/Git
+2) Continous Integration - Jenkins/Azure/Hudson
+3) Continous Delivery- Docker/Puppet
+4) Continous Deployment
+
+
+Agile - Whole req Epic
+Story Board
+stories
+Yet to begin
+ 	
+Completed
+
+
+Repo
+Commit
+Update
+Checkout
+Working Copy
+Centralized(just git/svn) a distributed(git and git hub)
+
+
+
+1 - commit f1 to repo by C1
+2 - C2 fetchingthe project data (as of now f1)
+3 - C2 Updates the file f1 and commits to repo
+4 - C3 fetches data which will be f1v1
+5 - C1 tries to update the f1 with his own version which will fail
+
+
+Download and install Git
+
+https://git-scm.com/download/win
+After installation 
+in cmd prompt 
+git --version
+
+Sign up for GitHub using LTI ID
+
+Navigate to the folder where the repo should be created in cmd prompt
+
+
+In the cmd prompt
+	To create a local repo
+	git init
+	To stage a file 
+	git add <filename>
+	To commit a file
+	git commit <filename> -m "<your message>"
+	To view the files that are staged and not tracked
+	git status
+	To view the files that are staged and commited
+	git ls-files
+	To stage all the files
+	git add -A
+	to commit all the files
+	git commit -a -m "<your message>"
+	To connect the locall repo with the remote repo
+	git remote add origin <remote repo url>
+	To push all the commited files to the remote repo
+	git push origin master
+	To get the updated files from the remote repo to the local
+	git pull origin master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
