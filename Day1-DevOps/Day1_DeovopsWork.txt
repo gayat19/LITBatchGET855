@@ -41,6 +41,7 @@ ML I can execute
 2) Continous Integration - Jenkins/Azure/Hudson
 3) Continous Delivery- Docker/Puppet
 4) Continous Deployment
+5) Monitoring
 
 
 Agile - Whole req Epic

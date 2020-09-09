@@ -1,0 +1,18 @@
+create a new c# program that will take 2 numbers
+The could should handle errors
+It should print the sum and product of the numbers.
+If one of the numbers is 0 then it should take the number again
+
+Once the project is created, create a new local(The solution folder) and remote repo
+push the files
+
+Colabrate with your buddy
+Allow your buddy to modify your code to find the difference and you modify your buddy's code.
+update the local and remote repo
+
+branch the project in to a new branch(CheckNewFunction)
+Add another functionality to find the result of dividing the first n umebr with t eh second
+
+Merge the work with your master
+
+push the work to remote repo

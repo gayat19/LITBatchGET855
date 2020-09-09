@@ -1,0 +1,47 @@
+To view all the commits
+git log
+
+To view the remote repo that is linked
+git remote -v
+
+To allow unrelated histories
+git pull --allow-unrelated-histories origin master
+
+New local repo created(r1)
+files commited to new repo
+New remote repo created(r2)
+files commited to remote repo
+r1 pushes to r2 will cause error
+from r1 pull with "--allow-unrelated-histories"
+then push from r1 to r2
+
+
+
+To disconnect the remote repo from the local
+git remote remove origin
+
+
+To Create a branch 
+git branch <branchname>
+
+To move to another branch
+git checkout <branchname>
+
+to view all the branches
+git branch
+
+
+To merge one branch with another
+git merge <branchname>
+note: please ensure you are in the destination branch
+
+To push one branch to remote another branch
+git push origin <localbranchname>:<remotebranchname>
+
+
+To view difference between 2 branches
+git diff <onebranch>..<anotherbranch>
+
+
+To create a folder in the name remote repo and initialize it as a git local repo and pull all the files from master
+git clone <remote repo url>
