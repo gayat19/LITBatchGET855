@@ -1,0 +1,25 @@
+﻿@model FirstMVCApplication.Models.Employee
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+@*Html Helpers*@
+@using (Html.BeginForm())
+{
+<table>
+    <tr>
+        <td>Employee ID</td>
+        <td>@Html.TextBoxFor(xyz => xyz.Id)</td>
+    </tr>
+    <tr>
+        <td>Employee Name</td>
+        <td>@Html.TextBoxFor(m => m.Name)</td>
+    </tr>
+    <tr>
+        <td>Employee Age</td>
+        <td>@Html.TextBoxFor(m => m.Age)</td>
+    </tr>
+</table>
+    <input type="submit" value="Add Customer" />
+}

@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "ViewDatavsViewBag";
+}
+
+<h2>ViewDatavsViewBag</h2>
+
+<h3>View Bag List</h3>
+@for (int i = 0; i < ViewBag.users.Count; i++)
+{
+    @ViewBag.users[i];
+    <br />
+}
+<br />
+<h3>View Data List</h3>
+
+@for (int i = 0; i < ((List<String>)ViewData["users"]).Count; i++)
+{
+    @(((List<String>)ViewData["users"])[i]);
+    <br />
+}
+<br />
+Check this out -> @ViewData["Nothing"]
+<br />
+Check this out -> @ViewBag.NothingHere
+@*Neither viewdata nor viewback willraise error for data not given*@
+@*This is comment in CSHTML*@

@@ -1,0 +1,9 @@
+create a new Web application
+Push the web application in git
+Create an account in Azure
+Create a new project in Azure
+Create a pipeline to deploy the web applicaion in azure
+
+659be6251111429494172064016af72d
+
+https://github.com/gayat19/JavaProj

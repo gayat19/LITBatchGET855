@@ -1,0 +1,18 @@
+FirstMVCApplication
+
+Create a Method - MyOwn with a matching View
+
+Create a Customer Model with
+Id,Name,Age and Phone as properties
+Create and list of customers and display the same using a list method in the Customer controller
+Crud for customer
+
+
+
+Doing CRUD in MVC
+
+Create - Adding an item to list
+Read - Reading all the items in List
+Read - Reading single item in lits
+Update - updating an item n the list
+Delete - Deleting an item in the list

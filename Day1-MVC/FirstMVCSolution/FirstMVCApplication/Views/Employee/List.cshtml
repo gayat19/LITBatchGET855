@@ -1,0 +1,30 @@
+﻿@model IEnumerable<FirstMVCApplication.Models.Employee>
+@{
+                /**/
+
+                ViewBag.Title = "List";
+}
+
+@using (Html.BeginForm())
+{
+    <input type="submit" value="Add a new Customer" class="btn btn-primary" formaction=@Url.Action("Create") formmethod="get" />
+}
+<h2>List</h2>
+@foreach (var item in Model)
+{
+    <p>
+        <div>
+            Employee ID : @item.Id
+            <br />
+            Employee Name : @item.Name
+            <br />
+            Employee Age : @item.Age
+            <br />
+            @Html.ActionLink("Edit", "Update", new { id = item.Id })
+            @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+            @*Text for display,Action  method name, parameter*@
+            @*Renderws a <a> </a> tagg*@
+        </div>
+    </p>
+    <hr />
+}

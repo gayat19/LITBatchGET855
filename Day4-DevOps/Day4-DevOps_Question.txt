@@ -1,0 +1,46 @@
+Q1)
+Create a new MVC Application and change the file to show your name and commit to git
+Collabrate yoour project with your buddy
+Deploy the applictaion in azure
+ask your buddy to change code and push again
+check the updates in deployment
+
+
+Q2)
+Update the board with the tasks for the project
+Video Rental shop which will have
+Customer tracking, disc tracking, Bill generation
+Add the required modules and create the board
+
+Q3)
+Flight Reservation
+User
+----------
+Search page
+ Single/Round Trip
+Registration
+Login
+Pick Seat
+Booking
+Payment
+Ticket
+Cancel
+History
+Add ons
+Wallet
+Edit ticket
+Change Password
+Forgot Password
+
+
+
+Admin
+---------
+Add flight
+Resch Flight
+Delete flight
+Add Trip
+Change price
+Modify flight/trip
+Bar user
+
