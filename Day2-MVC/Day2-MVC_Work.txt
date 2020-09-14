@@ -1,0 +1,14 @@
+Creating Views with customized model
+More on HTML Helper Class
+Understanding EF
+
+
+1) Creating a new table(Table without primary key cannot be added using EF)
+2) Updating the EF
+3) Adding data to the new table from the view->controller
+4) Using the entity framework to update the database.
+
+Create a new table Users with id and password
+
+List the users in a list and have a link to create a new user
+Note auto generate the userid(hint:Identity column)

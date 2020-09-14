@@ -1,0 +1,13 @@
+﻿@model UnderstandingEFProject.Models.user
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create anew user</h2>
+@using (Html.BeginForm()) { 
+<div>
+    Password: @Html.PasswordFor(m => m.password)
+</div>
+<input type="submit" value="Create user" class="btn btn-primary" />
+}
