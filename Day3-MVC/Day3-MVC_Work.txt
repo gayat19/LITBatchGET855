@@ -1,0 +1,20 @@
+Creating a database
+Creating tables
+Creating SP
+Creating the model using EF
+Applying validation
+Creating Controllers - CRUD
+Creating Views
+
+Q1
+Create a table employees
+Id,Name,Salary,ProfilePic,Age
+
+Display the names in a dropdownlist
+When the user selects a name and hits the go button 
+show the complete details of the employee in the next page
+
+Viewbag cannot transfer data between actions u have to use tempdata
+
+
+Utkarsh Gautam
