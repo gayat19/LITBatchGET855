@@ -1,0 +1,15 @@
+﻿@model ValidationExampleProject.Models.proc_LoginCheck_Result
+
+@{
+    ViewBag.Title = "UserHome";
+}
+
+<h2>UserHome</h2>
+<h1>Welcome @Model.username you are a @Model.role</h1>
+<span>From temp data</span>@TempData["username"]
+
+<div>
+    @Html.Partial("_StaticPartial")
+</div>
+
+

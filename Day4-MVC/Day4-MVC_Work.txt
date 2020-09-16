@@ -1,0 +1,75 @@
+TempData
+Validation
+Partial View - DRY
+Layout pages
+
+Login Page
+Creating the Table
+Creating a SP
+Creating the Controller - LoginController
+   3 methods
+    1 get - userlogin
+    1 post - userlogin
+    1 get - userhome
+    
+Creating the model
+Adding validations to the model
+Connecting it with the Welcome page
+
+
+create table users
+(username varchar(50) primary key,
+password varchar(50),
+name varchar(50),
+age int,
+role varchar(10) check(role in('admin','user')))
+
+Alter  proc proc_register_user(
+@un varchar(50),
+@pass varchar(50),
+@uname varchar(50),
+@uage int,
+@urole varchar(10) )
+as
+begin
+   insert into users(username,password,name,age,role) values(@un,@pass,@uname,@uage,@urole)
+end
+
+exec proc_register_user 'ramu','1234','Ramu A',21,'user'
+exec proc_register_user 'somu','1111','Somu B',28,'user'
+exec proc_register_user 'bimu','1000','Bimu C',35,'admin'
+
+select * from users
+
+create proc proc_LoginCheck(@un varchar(50),@pass varchar(50))
+as
+   select username,role from users where username=@un and password = @pass
+
+exec proc_LoginCheck 'ramu','1234'
+
+alter table users
+add checkcolumn varchar(5) 
+
+alter table users
+alter column isActive varchar(20)
+
+alter table users
+drop column checkcolumn
+
+exec proc_register_user 'ramu','1234','Ramu A',21,'user'
+exec proc_register_user 'somu','1111','Somu B',28,'user'
+exec proc_register_user 'bimu','1000','Bimu C',35,'admin'
+
+select * from users
+
+
+create a registration page
+
+Question
+create tables and procedures that are required to store Game score for different games
+Show a page where the user selects a game(From a dropdownlist) and hits the go button, takes him to another page where he can see the scores of users for that game(Have a link to go back to the game listing page)
+
+
+
+
+
