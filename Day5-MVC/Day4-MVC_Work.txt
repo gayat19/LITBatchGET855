@@ -1,0 +1,20 @@
+Question 1
+Use the Northwind database
+Create a login page whichw ill take the the customer id as username and name as password
+Remember the customer id for further transactions
+List the Products to the customer while the user clicks on the details
+Add a link to but the product
+When the user reaches the buy page take the details that are required forthe order and show the order data to the user
+
+Note Create a layout page that will be having the menu for viewing products and viewing orders
+When teh user selects the orders only his order dtails should be listed.
+
+Question 2
+Student - id,name,age
+Course - id,name,duration
+Enrol- student_id,course_id,date
+
+Create the model's first and generate the database
+Also add students,courses
+(Code first approch)
+

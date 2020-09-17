@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<div>
+    <h3>
+        Partial 1
+    </h3>
+    @Html.Partial("_PartialAnother")
+</div>
+
+<div>
+    <h3>
+        Partial 1
+    </h3>
+   @{ 
+       Html.RenderPartial("_PartialAnother");
+   }
+
+</div>
+<div>
+    <h3>
+        Check 
+    </h3>
+    @Html.Action("Check")
+</div>

@@ -1,0 +1,25 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_MyLayout</title>
+</head>
+<body>
+    <ul>
+        <li>@Html.ActionLink("Index", "Index", "Create")</li>
+        <li>@Html.ActionLink("Another", "Another", "Create")</li>
+    </ul>
+    <div> 
+        <h1>My layout page</h1>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>
