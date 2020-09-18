@@ -1,0 +1,13 @@
+Create a application that will display only after the user logs in
+User can register themselves(name,phone,email,address,password)
+
+Create a home page that has menu(Products,Cart,Order history,Profile) to view products
+Products will have 
+id,name,pic, price and quantity
+
+We can add product to cart
+
+We can view the cart from menu
+We can delete products from cart
+There should be a buy option which will simply display the success message and empty the cart and movethe products to ordered list
+

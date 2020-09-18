@@ -1,0 +1,93 @@
+DevOps
+SourceCode
+VersionControl
+Method
+Jenkins
+Git
+  Repo
+  Stage
+  Commit
+  Push
+  Pull
+  Checkout
+  Branch
+  compatible
+  Local repo
+  Remote Repo
+  Origin
+  merge
+  head
+  revision
+Jenkins
+  Job
+  Pipe
+  Freestyle
+  Plugin
+  Configuration
+  Path
+  Build
+  Deploy
+  Test
+  jar
+  service
+  hook
+Azure
+  Pipes
+  Board
+  Task
+  Sprint
+  Iteration
+  Backlog
+  build
+  Deploy
+  release
+  Configuration
+  test
+  Azure Project
+  Subscription
+  
+
+
+MVC
+Controller
+Model
+ViewStart
+Error
+HandleError
+Authorize
+Authenticate
+AllowAnon
+Router
+RoutingTable
+Bundling
+Minification
+Action
+PartialView
+Razor
+Rendering
+HTML Helper
+Templates
+Validation
+Filters
+Layout
+
+
+EF
+MOdel
+Context
+Connection
+Provider
+State
+DBSet
+Virual
+Lazy/Eager Loading
+Relation
+MOdelFirst
+DatabaseFirst
+CodeFirst
+Updates
+Entity
+SaveChanges
+
+
+
