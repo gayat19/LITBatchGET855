@@ -1,0 +1,45 @@
+Web API - Service
+Model - Data
+View - UI
+Controller - Managing/Calling BL
+
+MOdel - Data Model
+Controller - Action
+  Take/Return Data
+
+Download Postman
+Postman to test the API
+
+Creating a API
+Changing the content type
+Using PostMan to test all the Crud
+HTML+jQuery - client
+Angular - client
+Dotnet App - Client
+
+
+CRUD - Create Read Update Delete
+HttpGet - Read
+HttpGet/param - Read one
+HttpPost - Create
+HttpPut/param - Update
+HttpDelete/param - Delete
+
+
+Serializable Vs DataContract
+Serializable the tags are all messes up
+DataContract is clean
+
+Serializable serializes all the public members
+DataaContract we can choose usingthe datamember
+
+
+10 mins
+Login using Web Api
+Create a get method that will take price as parameter and fetch all products that cost less than the given price
+
+
+
+
+
+

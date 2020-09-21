@@ -1,0 +1,10 @@
+
+Self learning
+1)Post from HTML+Jquery(Just use the login)
+
+2) Prototypes for your project
+On Wed page design for all the page
+Please dont do in angular
+Just HTML+CSS
+
+
