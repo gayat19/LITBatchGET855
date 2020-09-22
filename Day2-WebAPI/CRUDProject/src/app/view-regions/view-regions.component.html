@@ -1,0 +1,9 @@
+<p>view-regions works!</p>
+<button class="btn btn-primary" 
+(click)="getRegions()">Get Regions</button>
+<div *ngFor="let region of regions" class="alert alert-info">
+    {{region.RegionID}}
+    <br/>
+    {{region.RegionDescription}}
+    <br/>
+</div>

@@ -1,0 +1,40 @@
+Create a web api -> SQL
+Install CORS for Web API
+Cross Origin Resource Sharing
+Web API in one domain
+Example - https://MyServices/EmployeeService
+
+
+
+Angular in another domain
+We will create a new angualar project
+example-https://www.MyApplication.com
+
+ng new CRUDProject
+yes
+CSS
+cd CRUDProject
+ng serve
+in another cmd prompt
+ng g c viewRegions
+npm install bootstrap --save
+
+in the project folder go to src/style.css
+@import "~bootstrap/dist/css/bootstrap.css"
+
+under the app folder
+create a new folder services
+In teh services folder create a new file regionService.ts
+
+create a new folder models
+In the models folder create a new file Region.ts
+
+Connect the angular to web api
+
+Visual studio
+Visual Studio Code
+Node Server
+SQL Server
+IIS Express
+Postman
+

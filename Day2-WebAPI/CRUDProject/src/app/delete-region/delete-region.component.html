@@ -1,0 +1,5 @@
+<p>delete-region works!</p>
+<select (change)="changeID(rid)" #rid>
+    <option *ngFor="let region of regions" [value]="region.RegionID">{{region.RegionDescription}}</option>
+</select>
+<button class="btn btn-danger" (click)="deleteRegion()">Detele</button>

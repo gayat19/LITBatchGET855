@@ -1,0 +1,11 @@
+<h1>Add region</h1>
+<div>
+    <label class="form-control">Id</label>
+    <input type="text" class="form-control"  [(ngModel)]="region.RegionID">
+    <label class="form-control">Name</label>
+    <input type="text" class="form-control"  [(ngModel)]="region.RegionDescription">
+    <button class="btn btn-success" (click)="addRegion()">Add Region</button>
+</div>
+<p *ngIf="message && message.RegionID==region.RegionID" class="text-danger">
+Region Added
+</p>
