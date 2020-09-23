@@ -1,0 +1,33 @@
+REST - Rep State Trans
+Resource
+Employee
+Add a new Employee
+Update the employee detail
+Delete the employee
+Read the employee data
+
+
+www.domainname.in/employee
+User - Table - Database
+
+
+User Controller
+Registration - Create
+Edit Profile - Update
+Disable USer - Update(update teh status of teh user)
+View Profile - Read user details
+
+Login Controller
+Login - Post - Read
+Forgor Password - Read Operation
+Reset Password - Update
+
+Modularity
+
+
+Old - View Oriented
+new Resource
+www.domainname.in/employee
+XML/JSON/BSON
+
+

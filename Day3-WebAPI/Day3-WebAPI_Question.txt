@@ -1,0 +1,45 @@
+Create a application and fetch all the products from Northwind database using a WebAPI
+
+Display in a view in MVC
+Table in a HTML Page
+Table in a Angular Application
+
+Note Enable CORS fro both angular and MVC
+HTML page can be a part of the We API
+
+
+
+2) Use code first approch to create the following tables
+Doctor
+id
+name
+exp
+speciality
+
+Patient
+id
+name
+age
+remarks
+
+Appointment
+id
+DoctorID
+PatientID
+date
+
+
+Create a Web api that will have the following routes for the actions
+
+Doctor/AddDoctor - Add a doctor
+Doctor/ViewDoctors - List all the doctors
+
+Patient/CreateNewRecord - Add a patient
+Patient/ViewMyRecord/{id} - View a partocular patient record - Learn attribute rpouting parameter
+
+Appointment/ViewByDoctorID - id as parameter - view appointments for one doctor
+Appointment/ViewByPatientID - id as parameter- view appointments for one patient
+Appointment/ViewAll - view all the appointments
+
+
+test using postman
